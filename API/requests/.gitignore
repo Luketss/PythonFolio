@@ -1,0 +1,16 @@
+# created by virtualenv automatically
+venv
+dif.txt
+2016.txt
+repos.txt
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+*.txt
+*.csv
+sample.py
