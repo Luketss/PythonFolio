@@ -1,13 +1,27 @@
 import pygame
 import sys
 import random
-
+# escreva um metodo na classe snake para torcar a cor do objeto snake
 class Snake(object):
     def __init__(self):
         self.length = 1
         self.positions = [((SCREEN_WIDTH / 2), (SCREEN_HEIGH / 2))]
         self.direction = random.choice([UP, DOWN, LEFT, RIGHT])
         self.color = (17, 24, 47)
+
+    def change_snake_color(self, new_color):
+        
+        if self._is_new_color_valid(new_color):
+            self.color = new_color
+             
+    
+    def _is_new_color_valid(self, new_color):
+        if not isinstance(new_color, tuple) or len(new_color) != 3:
+            return False
+        for color_value in new_color:
+            if not isinstance(color_value, int):
+                return False
+        return True
 
     
     def get_head_position(self):
@@ -110,6 +124,9 @@ def main():
 
     snake = Snake()
     food = Food()
+
+    new_color = (255, 0, 0)
+    snake.change_snake_color(new_color)
 
     myfont = pygame.font.SysFont("monospace", 16)
 
