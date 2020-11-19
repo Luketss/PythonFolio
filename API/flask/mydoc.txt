@@ -3,7 +3,21 @@ o protocolo WSGI (web server gateway interface).
 
 cria um objeto da classe flask > 
 
-from flask import Flask
-app = Flask(__name__)
+    from flask import Flask
+    app = Flask(__name__)
 
+clients (como web browser) enviam as requisições para o web server, que envia para a instancia da aplicação flask. A instancia precisa saber qual codigo rodar para
+a url da requisição, deixando um registro das URLs para python function
 
+A associação entre a URL e a função que ela lida com é chamado de ROUTE
+
+the common way to define a route:
+
+    @app.route('/')
+    def index():
+    return '<h1>Hello World!</h1>'
+
+o exemplo anterior define a função index() como o handler da URL da aplicação. Se a aplicação tiver o deploy no servidor com o dominio www.testeaqui.com, a navegação
+nessa url irá engatilhar a index() para rodar no servidor. O valor de return dessa função, chamado de response, é o que o cliente recebe.
+
+Funções como index() são chamadas de view functions. o return de uma view function pode ser uma simples string com HTML, assim como coisas mais complexas.
