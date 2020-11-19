@@ -1,0 +1,9 @@
+todas as aplicações flask precisam criar uma instancia da aplicação. O web server entrega todas as requisições que ele recebe para esse objeto tratar usando 
+o protocolo WSGI (web server gateway interface).
+
+cria um objeto da classe flask > 
+
+from flask import Flask
+app = Flask(__name__)
+
+
