@@ -21,3 +21,27 @@ o exemplo anterior define a função index() como o handler da URL da aplicaçã
 nessa url irá engatilhar a index() para rodar no servidor. O valor de return dessa função, chamado de response, é o que o cliente recebe.
 
 Funções como index() são chamadas de view functions. o return de uma view function pode ser uma simples string com HTML, assim como coisas mais complexas.
+
+Agora vamos a um exemplo onde a URL usa uma sintaxe dentro da route
+
+    @app.route('/user/<name>')
+    def user(name)
+        return '<h1>Hello, %s</h1>' % name
+
+Quando a View function é chamada, o Flask envia o componene dinamico como um argumento.
+
+Flask aceita os tipos int, float e path para as routes. O path type também representa uma string mas não considera slashes
+
+    Server Startup
+
+A instancia da aplicação tem um metpdp run que inicia o Flask web server
+
+    if __name__ == '__main__':
+        app.run(debug=True)
+    
+O __name__ == '__main__' Garante que o web server só será iniciado quando o script for executado diretamente. Quando o script é importado por outro, ele assume que agora é um parent script,
+fazendo com que a chamada app.run() seja pulada.
+
+Quando o servidor é iniciado, ele entra em um loop que fica esperando por requests e services. Esse loop continua ate que a aplicação seja encerrada (Ctrl-C).
+
+Durante o desenvolvimento é bom deixar o debug mode como true.
