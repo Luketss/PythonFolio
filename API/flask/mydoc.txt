@@ -45,3 +45,40 @@ fazendo com que a chamada app.run() seja pulada.
 Quando o servidor é iniciado, ele entra em um loop que fica esperando por requests e services. Esse loop continua ate que a aplicação seja encerrada (Ctrl-C).
 
 Durante o desenvolvimento é bom deixar o debug mode como true.
+
+Caso seja digitado outra URL que não esteja especificada, a aplicação não vai saber como tratar e irá retornar um erro 404 para o navegador.
+
+    THE REQUEST-RESPONSE CYCLE
+
+Quando o Flask recebe uma requisição do cliente, ele precisa disponibilizar alguns objetos para que a view function trate corretamente. Um bom exemplo é o request object, que encapsula o HTTP request enviado pelo cliente.
+
+A forma com a qual o Flask permite a view function para acessar o objeto é enviando um argumento, mas isso iria necessitar que todas as view functions na aplicação tivessem um argumento extra. Podendo ficar mais complicado caso considere que o request object não é o único objeto que a view precisa acessar para completar a requisição.
+
+    from flask import request
+    
+    @app.route('/')
+    def index():
+
+    user_agent = request.headers.get('User-Agent')
+    return '<p>Your browser is {}</p>'.format(user_agent)
+
+Nesse exemplo acima, é utilizado o request como view function sendo como uma variável global.
+
+    REQUEST DISPATCHING
+
+Quando a aplicação recebe uma requisição do cliente, ela precisa saber qual view funciton irá chamar. Para isso, o Flask olha para a URL dada pela requisição na application URL map, que contem um mapa das URLs para tratamento da view functions.
+
+O Flask constroi esse mapa usando o app.route decorators ou o nondecorator version app.add_url_rule().
+
+Para ver como a URL map naquela aplicação Flask está, você pode inspecionar o map no Python shell. Para esse teste, tenha certeza que seu venv está ativado.
+
+    (venv) $ python
+    >>> from hello import app
+    >>> app.url_map
+    Map([<Rule '/' (HEAD, OPTIONS, GET) -> index>,
+    <Rule '/static/<filename>' (HEAD, OPTIONS, GET) -> static>,
+    <Rule '/user/<name>' (HEAD, OPTIONS, GET) -> user>])
+O / e /user/<name> route são difinidos pelo app.route decorators na aplicação. O /static/<filename> route é uma rota especial adicionada pelo Flask para dar acesso aos arquivos static. (cap 3)
+Os elementos HEAD, OPTIONS, GET exibidos na URL map são os request methods que são tratados pela route. (cap 4)
+
+
