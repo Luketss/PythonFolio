@@ -8,4 +8,4 @@ def anagramas(palavra):
                 tmp.append(value[:i] + palavra[0:1] + value[i:])
         return tmp
 
-print(anagramas('l'))
+print(anagramas('imagine'))
