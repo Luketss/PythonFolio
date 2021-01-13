@@ -25,16 +25,27 @@ class Programa:
         if not isinstance(new_name, str):
             return False
         return True
+
+    def __str__(self):
+        return (f'{self._nome} - {self.ano} - {self._like} Likes')
+    
+    # def imprime(self):
+    #     print(f'{self._nome} - {self.ano} - {self._like} Likes')
     
 class Filme(Programa):
     def __init__(self, nome, ano, duracao):
         super().__init__(nome, ano)
         self.duracao = duracao
+    def __str__(self):
+        return (f'{self._nome} - {self.ano} - {self.duracao} min - {self._like} Likes')
 
 class Serie(Programa):
     def __init__(self, nome, ano, temporadas):
         super().__init__(nome, ano)
         self.temporadas = temporadas
+
+    def __str__(self):
+        return (f'{self._nome} - {self.ano} - {self.temporadas} temporadas - {self._like} Likes')
    
     
 def main():
@@ -50,8 +61,13 @@ def main():
     filmes_series = [vingadores, atlanta]
 
     for programa in filmes_series:
-        detalhes = programa.duracao if hasattr(programa, 'duracao') else programa.temporadas
-        print(f'O nome é: {programa.nome} - {detalhes}')
+        print(programa)
+
+    
+
+    # for programa in filmes_series:
+    #     detalhes = programa.duracao if hasattr(programa, 'duracao') else programa.temporadas
+    #     print(f'O nome é: {programa.nome} - {detalhes}')
 
 if __name__ == '__main__':
     main()
