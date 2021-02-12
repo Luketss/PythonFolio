@@ -1,0 +1,33 @@
+validação de is empty >>> 
+{% if lista %}
+  <p>Temos {{ len(lista) }} apostilas no nosso site. </p>
+{% else %}
+  <p>Nenhuma apostila aqui... </p>
+{% endif %}
+
+O Jinja2 é o motor de templates do Flask. Ele nos ajuda com diversos helpers enquanto projetamos nossos HTML de forma mais dinâmica.
+
+Um exemplo de facilidade que temos nos templates é a idéia de filtrar um conteúdo que vem do servidor, o conteúdo de uma variável que será impressa no HTML.
+
+Temos um trecho de código da nossa aplicação aqui:
+<h1>{{  titulo  }}</h1>
+
+Imagine que precisamos fazer todo título de página ser iniciado com letra maiúscula no nosso template. Podemos fazer o seguinte, no trecho de código que imprime o título.
+<h1>{{  titulo|title  }}</h1>
+
+Muito tranquilo de fazer esta melhoria, não é? Tem vários outros filtros que podem ajudar, como:
+
+upper: colocar os caracteres em caixa alta
+round: arredondar números
+trim: remover espaços do início e do fim do texto
+default('texto exibido por padrão') - quando queremos mostrar algo, caso a variável esteja vazia ou nula.
+
+Still having problems after following the solution provided by codegeek:
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}"> ?
+
+In Google Chrome pressing the reload button (F5) will not reload the static files. If you have followed the accepted solution but still don't see the changes you have made to CSS, then press ctrl + shift + R to ignore cached files and reload the static files.
+
+In Firefox pressing the reload button appears to reload the static files.
+
+In Edge pressing the refresh button does not reload the static file. Pressing ctrl + shift + R is supposed to ignore cached files and reload the static files. However this does not work on my computer.
+

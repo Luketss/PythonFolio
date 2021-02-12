@@ -1,0 +1,16 @@
+body {
+    padding: 10px;
+}
+
+.page-header {
+    margin-left: 30%;
+}
+
+.form-group {
+    padding: 5px;
+}
+
+.form-group input {
+    border-radius: 10px;
+}
+
