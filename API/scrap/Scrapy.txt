@@ -1,0 +1,27 @@
+Para criar seu projeto com o Scrapy, basta utilizar no terminal: scrapy startproject nome_do_projeto
+
+Você terá uma estrutura de dados mias ou menos igual a >>
+(dir) nome_do_projeto
+	- (dir) spiders
+		- __init__.py
+	- __init__.py
+	- items.py
+	- middlewares.py
+	- pipelines.py
+	- settings.py
+(dir) venv
+
+settings.py > spider é um programa python que faz o scrap em websites
+	USER_AGENT = identifica a pessoa que está fazendo a requisição. A página pergunta ao seu browser "Quem está perguntando/pegando esses dados?" 
+item.py > Sempre que precisar definir um campo. Spiders podem retornar o dado extraido como items (Objeto Python que define pares key:value
+pipeline.py > Todo o código aqui presente garante que seus dados sejam tratados corretamente e armazenados no local correto
+middleware.py > adiciona algo ao request que está sendo feito ao site (Proxy, por exemplo)
+
+yield > podemos pensar como uma função de return. Mas por que usar ele e não o return? O motivo se dá ao Yield ser utilizado como um gerador que é usado pelo scrapy por trás das cortinas.
+
+usando o xpath > (neste exemplo, vamos utilizar no shell. scrapy shell "http://quotes.toscrape.com/". Em seguida, ao ter a response, vamos aplicar o response.xpath("//title").extract()
+No xpath, ao tentar utilizar o comando response.xpath("//title::text") será retornado um erro pois a utilização é diferente. Precisamos utilizar uma / no lugar dos dois pontos e também colocar um parentesis após o text > response.xpath("//title/text()").extract()
+
+Podemos também combinar o uso do response.xpath e do response.css, vamos ao exemplo > response.css("li.next a").xpath("@href").extract() > nesse exemplo, podemos observar que o spider irá procurar por um li que contém a classe next e dentro a tag a, em seguida, irá verificar o texto presente no href
+
+Para escrever o resultado direto em um arquivo json podemos utilizar o seguinte comando scrapy crawl quotes -o items.json > estamos chamando o SCRAPY par autilizar o CRAWL com nome de quotes e queremos que o output (-O) seja escrito em um arquivo denominado items.json
