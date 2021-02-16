@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--        <meta charset="ISO-8859-1" />-->
+        <meta charset="windows-1252" />
+        
+        <meta http-equiv="pragma" content="no-cache">
+
+        <!--Bootstrap responsividade-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="author" content="Gilberto Moreira">
+        <meta name="contact" content="31 98604 2310"
+        <meta name="contact" content="gilberto.souza@governo.mg.gov.br"
+        <meta name="contact" content="gmsouza@gmail.com"
+        
+        <meta name="description" content="Jornal Minas Gerais, Diario Oficial de Minas Gerais, Publica��o Oficial">
+        <meta name="keywords" content="Belo Horizonte, Minas Gerais, Governo, Jornal, Jornal Minas Gerias, Minas Gerais, Publica��o Oficial, Oficial, Divulga��o, Midia">        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128865962-1"></script> 
+        
+        
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/imageviewer.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/jquery-confirm.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/bootstrap/bootstrap.min.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/awesome/css/fontawesome.min.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/awesome/css/all.min.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/colors.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/jquery-ui.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/nucleo.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/menu_lateral.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/abas.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/nucleo/bibliotecas/css/DataTable/media/css/datatables.min.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/modulos/casacivil.jornalminasgerais/bibliotecas/css/css.css" />
+                <link rel="stylesheet" media="screen" type="text/css" href="/modulos/casacivil.jornalminasgerais/bibliotecas/css/noticiario.css" />
+        
+        <!-- <link rel="shortcut icon" href="modulos/iomg/BIBLIOTECAS/IMAGENS/favicon.ico" /> -->
+        <link rel="shortcut icon" href="modulos/casacivil.jornalminasgerais/bibliotecas/imagens/favicon.ico" />
+        <!--<title></title>-->
+        <title>Di&aacute;rio Oficial Eletr&ocirc;nico Minas Gerais</title>
+
+    </head>
+
+    <body>
+
+        <!-- Inserindo o cabecalho -->
+                <!-- MENU TOPO -->
+<header class='fixTop'>
+    
+<div class="container-fluid " id="menuTop">
+
+    <div class="row">
+
+        <!--Menu inicio-->
+        <div class="col-md-9 bg-black90">
+            <nav class="navbar navbar-expand-lg navbar-light bg-black90 ">
+                <!--<a class="navbar-brand" href="http://www.casacivil.mg.gov.br" target="_blank">-->
+                <a id='carregaHome' class="navbar-brand" href="" title="Inicio">
+                    <img class="img-fluid d-block" src="/modulos/casacivil.jornalminasgerais/bibliotecas/imagens//jornalminasgerais.mg.gov.br.png" width="80%">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active"> 
+                            <a id="carregaHome" class="nav-link" href="#">INÍCIO</a>
+                        </li>
+
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Publicações </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" id='carregaNoticiario' href="#">Noticiário</a>
+                                <a id="carregaJornal" class="dropdown-item" href="#">Jornais</a>
+                                <a id="Lei100" class="dropdown-item" href="#">Lei 100</a>
+                                <a id="Anexos" class="dropdown-item" href="#">Edições Extras</a>
+                                <!--<a id="ftp" class="dropdown-item" href="#">ftp</a>-->
+                                <a id="publicacaoNoticiario" class="dropdown-item" href="#">Publicar noticiário</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item"> 
+                            <a class="nav-link" 
+                               target="_blank" 
+                               href="http://www.governo.mg.gov.br/Servicos/Detalhe/47">
+                                Como publicar
+                            </a>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" target='_blank' href="https://diarioweb.casacivil.mg.gov.br">
+                                <!--<i class="link fas fa-book"></i>--> 
+                                &nbsp;Realizar publicação&nbsp;
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="autenticidade" target="_blank" class="nav-link" >Autenticidade</a>
+                        </li> 
+
+                    </ul> 
+
+                    <!--                    <ul class="navbar-nav text-white ">
+                                            <li class="nav-item">
+                                                <a class="" id="relatorioPublicacoes">
+                                                    <i class="link fas fa-key"></i> 
+                                                    &nbsp;Relatorios &nbsp;
+                                                </a>
+                                            </li>
+                                        </ul>-->
+
+                    <!--                    <ul class="navbar-nav text-white ">
+                                        </ul>-->
+
+                    <ul class="navbar-nav text-white ">
+                        <li class="nav-item">
+                            <a id="faleConoso" target="_blank" class="nav-link" href="http://www.casacivil.mg.gov.br/index.php/2017-06-07-14-18-12/fale-conosco">
+                                Atendimento
+                            </a> 
+                        </li> 
+
+                        <li class="nav-item">
+                            <a class="" target='_blank' href="https://api.whatsapp.com/send?l=pt_br&phone=553139167075&source=&data=">
+                                &nbsp;&nbsp;<img src="/modulos/casacivil.jornalminasgerais/bibliotecas/imagens//whatsapp3.png" style="height:33px; margin-top: 2px;" title='Atendimento via WhatsApp'>
+                            </a> 
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <!-- Menu FIM -->
+
+        <div class="col-md-3 bg-orange">
+
+            <nav class="navbar navbar-expand-lg navbar-light ">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-top: 5px;">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item ">
+
+                            <i class="fa text-white fa-wheelchair"></i>
+                            <a class="nolink" >Acessibilidade</a>
+
+                            <i id='acessibilityAumentar' class="link fa text-white fa-plus-circle"></i>&nbsp;
+                            <i id='acessibilityPadrao' class="link fas text-white fa-circle"></i>&nbsp;
+                            <i id='acessibilityReduzir' class="link fa text-white fa-minus-circle fa-1x"></i>
+
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nolink" >Contraste</a>
+                            <i id='acessibilityContrate' class="link fas fa-adjust fa-inverse"></i>
+                        </li>
+                    </ul>
+
+                    
+
+
+
+                </div>
+
+            </nav>
+
+        </div>
+    </div>
+</div> 
+</header> 
+        
+        <!--
+<nav id='migalhas' aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Autenticidade</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Carimbo de tempo</li>
+    <li class="breadcrumb-item active" aria-current="page">Contentar</li>
+  </ol>
+</nav> 
+--> 
+        
+        <div class="inBoxApp">
+<!-- PESQUISA NO JORNAL -->
+
+<div class="container-fluid Pesquisa p-2">
+
+    <div class="row">
+
+        <div class="col-md-3 noAdvancedSearch" style="margin-top: 0px;">
+            <div class="input-group mb-2">
+
+                <div style="font-weight: bold; width: 100%; margin-left: 2.5em;" > Informe a data desejada:</div>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-calendar"></i> 
+                    </span>
+                </div>
+                <input type="date" id="dataJornal" name="dataJornal" class="form-control" value="12/02/2021" />
+
+                <div class="input-group-prepend">
+                    <span id="pesquisarSomenteData" class="input-group-text" >
+                        <a href="#">Ir</a>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-9 ">
+            <div class="input-group mb-2">
+
+                <div style="font-weight: bold; width: 100%; margin-left: 2.5em;" > Informe o texto a ser pesquisado:</div>
+
+                <div class="input-group-prepend noAdvancedSearch">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-font"></i>
+                    </span>
+                </div>
+                <input type="text" id='buscar' name='buscar' class="form-control noAdvancedSearch" placeholder="Palavra ou frase para pesquisar">
+                <!--                <div class="input-group-prepend noAdvancedSearch">
+                                    <span id='pesquisarComTexto' class="input-group-text" >
+                                        <a href="#">Pesquisar</a>
+                                    </span>
+                                </div> &nbsp;&nbsp;&nbsp;&nbsp;-->
+
+                <div class="input-group-prepend">
+                    <span id="pesquisarNestaData" class="input-group-text" >
+                        <a href="#">Buscar</a>
+                    </span>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <button type="button" class="btn bg-orange" id="pesquisaAvancada">Pesquisa Avançada</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--PESQUISA AVANCADA-->
+
+<!--PESQUISA AVANCADA-->
+<div class="pt-0 text-white pesquisaAvancada invisible bg-grayLight" > 
+    <!--#FFD4C6;-->
+    <!--style='background-color: #FFD4C6;'-->
+
+    <div class="container" style='color: #000;'> 
+
+        <div class="row">
+
+            <div class="col-md-6 text-md-left  align-self-center my-1" style='color: #561600;'>
+                <h1 class="display-3">Pesquisa avançada</h1>
+                <p class="lead" >A pesquisa avançada permite consultar o conteúdo do Jornal Minas Gerais de forma refinada, em período determinado; por caderno, palavra ou frase.</p>
+
+                <i class="fas fa-exclamation-triangle"></i> 
+                <a target='_blank' style="font-weight: normal;" href="http://pesquisa.iof.mg.gov.br/pesquisa/pesquisaNew.asp"> Clique aqui para pesquisar no periodo entre julho de 2005 a 15 de dezembro de 2010.</a>
+                <!--<a target='_blank' style="font-weight: normal;" href="http://pesquisa.iof.mg.gov.br/pesquisa/pesquisaNew.asp"> Clique aqui para pesquisar conteúdo publicado no periodo anterior a dezembro de 2010.</a>-->
+
+            </div>
+
+            <!--SEGUNDA COLUNA: Dados para pesquisa-->
+            <div class="col-md-6 fg-grayDark my-5"> 
+
+                <!--background-color: #FFD4C6;-->
+
+                <div class="container-fluid my-3 ">
+
+                    <!--<form>-->
+                    
+                        <div class="row hide">
+
+                            <div class="col-md-12">
+                                <label class='form-check-label font-weight-bold'>Pesquisar em</label>
+                                <div class="form-check">
+                                    <input  id='advancedSearchNoticiario' type="checkbox" class="form-check-input">
+                                    <label class="form-check-label" for='emJornal'>Noticiario</label>
+                                </div>    
+
+                                <div class="form-check"> 
+                                    <input  id="advancedSearchJornal" type="checkbox" checked='checked' class="form-check-input">
+                                    <label class="form-check-label" for='emNoticiario'>Jornal</label>
+                                </div>    
+
+                                <div class="form-check">
+                                    <input id="advancedSearchTodos" type="checkbox" checked='checked' class="form-check-input">
+                                    <label class="form-check-label" for='emTodos'>Todos</label>
+                                </div>    
+
+                            </div>                    
+                        </div>
+
+                        <div class="row my-3">
+
+                            <div class="col-md-12"> 
+                                <label class='form-check-label font-weight-bold'>Período para pesquisar</label>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class='form-check-label'>De</label> 
+                                <input id='advancedSearchData' type="date" class="form-control" placeholder="Início" title="Informe a data inicial para realizar a pesquisa" /> 
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class='form-check-label'>Até</label>
+                                <input id='advancedSearchData2' type="date" class="form-control" placeholder="Final" title="Informe a data final para realizar a pesquisa" /> 
+                            </div>
+
+                        </div>
+
+                        <div class="row my-3">
+                            <label class='form-check font-weight-bold'>Palavra ou frase</label>
+                            <div class="col-md-12">
+                                <input id='advancedSearchText' type="text" class="form-control" placeholder="Palavra ou frase para pesquisar" /> 
+                            </div>
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-md-12">
+                                <button class="btn fg-white bg-orange" id='pesquisarPesquisaAvancada'>Pesquisar</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                <!--</form>-->
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div> 
+
+
+
+
+<div class="container-fluid py-2 text-white resultadoPesquisaAvancada invisible bg-grayLight" style='color: #000;'> 
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <table id="resultadoBuscaAvancada" class="table display table-striped" style="width:100%; color: #561600;">
+                <thead>
+                    <tr>
+                        <th scope='col'>Página</th>
+                        <th scope='col'>Caderno</th>
+                        <th scope='col'>Data</th>
+                        <th scope='col'></th>
+                    </tr> 
+                </thead> 
+                <tbody>
+                </tbody>
+            </table>                
+
+            <nav aria-label="Navegação nos jornais" class="paginator">
+            </nav>
+
+
+        </div>
+
+        <div class="col-md-9 imageViewSearch">
+
+            
+
+<div class='container-fluid jornalMinasGerais'  >
+
+    <div class="row toolbar" >
+
+        <div class="col-md-6 float-left">
+            <nav class="navbar float-left">
+                <i class="nav-link fas fa-caret-left fa-2x view_anterior " title="Volta para a pagina anterior" page='' source=''></i>
+                <i class='nav-link fas fa-save downloadPage' title='Baixar esta pagina' page='' source=''></i> 
+                <i class='nav-link fas fa-download downloadCaderno' title='Baixar este caderno completo' page='' source=''></i>  
+                <i id='jornalTelaCheia' class="telaCheia nav-link fas fa-expand" title='Visualizar em tela cheia'> </i>
+
+                <i class="nav-link fas fa-caret-right fa-2x view_proximo" title="Avançar para a próxima página" page='' source=''> </i>
+
+                <!--Impressora removida PDF não imprime-->
+                <!--<i id='imprimirJornal' class="fas fa-print no-mobile" title="Imprimir jornal"></i>-->
+
+                <!--<i id='jornalVoltar' class="nav-link fas fa-undo" title="Voltar" page='' source='' style="display: none;">--> 
+                    <a id='jornalVoltar' class="link" style="display: none;" >Voltar</a> 
+                <!--</i>-->
+            </nav>
+        </div>
+
+        <div class="col-md-6 ">
+
+            <nav class="navbar navbar-right float-right gotoPage" style='margin-top: 5px; width: 50%;'>
+
+                <div class="input-group" >
+
+                    <!--<div style="font-weight: bold; width: 100%; margin-left: 2.5em;" > Ir para página:</div>-->
+                    <!--<div class="input-group-prepend no-mobile" >-->
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa fa-book fa-1x no-mobile"></i>&nbsp;Ir para 
+                        </span>
+                    <!--</div>-->
+                    <input type="text" id="goPage" class="form-control" placeholder="Página" value="">
+
+                    <div class="input-group-prepend">
+                        <span id="irParaPagina" class="input-group-text" >
+                            <a href="#">Ir</a>
+                        </span>
+                    </div>
+                </div>                
+
+            </nav>
+        </div>
+
+    </div>
+
+
+    <div class="row targetMedia" 
+         data-toggle="tooltip" 
+         title="Clique para alternar a visualização em tela cheia">
+
+        <div class="col-md-12">
+            <!--<embed id='jornalTelaCheia' src="" width="100%" height="100%" frameborder="1">-->        
+            <embed id='jornalTelaCheia' src="" width="100%" frameborder="1">        
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+    </div>
+
+</div> 
+
+
+
+ 
+
+<!--FIM PESQUISA NO JORNAL--> 
+<div class="containerJornal container-fluid">
+
+    <div class="row">
+
+        <div class="col-md-3 conteudo-jornal" > 
+
+            <!--COLUNA 1 lado esquerdo--> 
+            <!--Menu do jornal-->
+
+<h4 title='Jornal Minas Gerais' >
+    <b>Jornal Minas Gerais</b>
+</h4> 
+
+<!--ABAS-->
+<!--Itens Noticiario e Jornal-->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <!--<a id="abaDoNoticiario" href="#abaDoNoticiario" class="nav-link " data-toggle="pill" data-target="#abaNoticiario">-->
+        <a id="carregaAgenciaMinas" href="http://www.agenciaminas.mg.gov.br" target="_blank" class="nav-link  active" data-toggle="pill"> 
+             
+            Noticiário 
+                       
+        </a>
+    </li>
+
+    <li class="nav-item"> 
+        <a id="abaDoJornal" class="nav-link" href="#abaDoJornal" data-toggle="pill" data-target="#abaJornalMinasGerais">
+            Diário Oficial
+        </a>
+    </li>
+
+
+                    
+
+</ul>
+
+
+<!--Menu do jornal com sanfona-->
+
+<!--Itens do menu do jornal-->
+
+<!--contador--> 
+
+<div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade active" id="abaJornalMinasGerais" role="tabpanel" aria-labelledby="home-tab" >
+        <div class="card">
+
+            
+                        <!-- Ancora para o link abaixo -->
+            <a name='caderno1'></a>
+            <div class="card-header" id="headingOne" >
+
+
+                <!--Caderno do jornal-->
+                <button id="menuCadernoDoJornal"
+                        class="btn btn-link menuCadernoDoJornal" 
+                        data-toggle="collapse" 
+                        data-target="#caderno1" >
+                    <a class="nav-link " 
+                                              title="23 páginas"
+                       >
+                        Diário do Executivo                                                                                 
+                    </a>
+                </button>
+
+            </div>
+
+            <!--Item do Caderno do Jornal-->
+
+            
+            <div id="caderno1" 
+                 class="collapse" >
+                <div class="card-body">
+
+                    <!--ITENS DO CADERNO DO JORNAL-->
+                    <ul>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='1'
+                               bid="67256"
+                               >
+                                Diário do Executivo <span>1</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='1'
+                               bid="67257"
+                               >
+                                Governo do Estado <span>1</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='2'
+                               bid="67258"
+                               >
+                                Secretaria de Estado de Governo <span>2</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='2'
+                               bid="67259"
+                               >
+                                Defensoria Pública do Estado de Minas Gerais <span>2</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='3'
+                               bid="67260"
+                               >
+                                Polícia Militar do Estado de Minas Gerais <span>3</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='3'
+                               bid="67261"
+                               >
+                                Polícia Civil do Estado de Minas Gerais <span>3</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='5'
+                               bid="67262"
+                               >
+                                Secretaria de Estado de Agricultura, Pecuária e Abastecimento <span>5</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='5'
+                               bid="67263"
+                               >
+                                Secretaria de Estado de Cultura e Turismo <span>5</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='5'
+                               bid="67264"
+                               >
+                                Secretaria de Estado de Desenvolvimento Econômico <span>5</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='5'
+                               bid="67265"
+                               >
+                                Secretaria de Estado de Desenvolvimento Social <span>5</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='5'
+                               bid="67266"
+                               >
+                                Secretaria de Estado de Fazenda <span>5</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='7'
+                               bid="67267"
+                               >
+                                Secretaria de Estado de Infraestrutura e Mobilidade <span>7</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='7'
+                               bid="67268"
+                               >
+                                Secretaria de Estado de Justiça e Segurança Pública <span>7</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='7'
+                               bid="67269"
+                               >
+                                Secretaria de Estado do Meio Ambiente e do Desenvolvimento Sustentável <span>7</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='8'
+                               bid="67270"
+                               >
+                                Secretaria de Estado de Planejamento e Gestão <span>8</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='13'
+                               bid="67271"
+                               >
+                                Secretaria de Estado de Saúde <span>13</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='14'
+                               bid="67272"
+                               >
+                                Secretaria de Estado de Educação <span>14</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno1' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno1'
+                               pagina='16'
+                               bid="67273"
+                               >
+                                Editais e Avisos <span>16</span> 
+                            </a>
+                        </li>
+                                            </ul>
+
+                </div>
+            </div>
+                        
+                        <!-- Ancora para o link abaixo -->
+            <a name='caderno2'></a>
+            <div class="card-header" id="headingOne" >
+
+
+                <!--Caderno do jornal-->
+                <button id="menuCadernoDoJornal"
+                        class="btn btn-link menuCadernoDoJornal" 
+                        data-toggle="collapse" 
+                        data-target="#caderno2" >
+                    <a class="nav-link " 
+                                              title="40 páginas"
+                       >
+                        Publicações de Terceiros e Editais de Comarcas                                                      
+                    </a>
+                </button>
+
+            </div>
+
+            <!--Item do Caderno do Jornal-->
+
+            
+            <div id="caderno2" 
+                 class="collapse" >
+                <div class="card-body">
+
+                    <!--ITENS DO CADERNO DO JORNAL-->
+                    <ul>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno2' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno2'
+                               pagina='1'
+                               bid="67274"
+                               >
+                                Particulares e Pessoas Físicas <span>1</span> 
+                            </a>
+                        </li>
+                        
+                        <li class='itensDoMinas nav-item' caderno='caderno2' >
+                            <a class=' nav-link'
+                               href='#caderno-jornal'
+                               caderno='caderno2'
+                               pagina='33'
+                               bid="67275"
+                               >
+                                Câmaras e Prefeituras do Interior <span>33</span> 
+                            </a>
+                        </li>
+                                            </ul>
+
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+
+    <div class="tab-pane fade show " id="abaNoticiario" role="tabpanel" aria-labelledby="home-tab" >
+        <!--<div id="accordion">-->
+        <div class="card">
+
+            <!--Itens do menu NOTICIARIO-->
+
+            
+        </div>
+
+    </div>
+
+    <div class="tab-pane fade active" id="abaEdicaoExtra" role="tabpanel" aria-labelledby="home-tab" >
+        <div class="card">
+
+            
+
+                        
+
+                        
+        </div>
+
+    </div>
+
+
+
+</div>  
+
+        </div> 
+
+
+        <!--style="height: 1960px;"-->
+        <div class="col-md-9 conteudo-jornal"  >
+
+            <!--COLUNA 2 lado direito--> 
+            <!--CAROUSEL NOTICIARIO-->
+
+<div id="noticiario-carousel" data-interval="5000" class="carousel slide" data-ride="carousel">
+
+    
+<!--
+<iframe src="http://agenciaminas.mg.gov.br" style="width:100%; height: 100%; border:1px silver solid;">
+</iframe>
+-->
+
+
+<div class="container-fluid noticiarioPanelNotices abaDoNoticiario ">
+    <div class='row notices'>
+        
+        <!--Materia principal-->
+                <div class='col-md-8'>
+
+            <div class="home-destaque" title='Ver a matéria'>
+                <a onclick="view_materiaNoticiario()" class="link-container">
+                    <div class="image-container image-container-1">
+                        
+                        <img class="img-responsive img-fluid" src="" alt="">
+                        
+                        <div class="home-destaque-description">
+                            <div class="data_materia mb-1"></div>
+                            <div class="fg-white noticiariosSumarios__titulo" ></div>
+                                                    </div>
+                    </div>
+                </a>
+            </div>            
+
+        </div>
+
+        <div class='col-md-4'>
+            <div class='container-fluid'>
+                                
+                                <div class='col-md-4' > 
+                    &nbsp;
+                </div>
+                            </div>
+
+        </div>
+
+    </div>
+
+     
+    <div id='materia' class='row detail'  style='display: none;'>
+        <div class='col-md-12'>
+
+            <a style="display: block;" onclick='view_materiaNoticiario("voltar")'> 
+                <i class="fas fa-arrow-left"> Voltar </i>
+            </a>
+
+            <header onclick='view_materiaNoticiario("voltar")' >
+
+                <a style="display: block;" onclick='view_materiaNoticiario("voltar")'> 
+                    <span class="data_materia block mb-2 mt-3"></span>
+                </a>
+
+                <h2 class="text-title-4 mb-3"></h2>
+
+                <div class='center mb-4'>
+                    <h4 class="text-subtitle mb-3" style='font-size: 1.5em;'></h4>
+                </div>
+
+            </header>
+
+            <main class="materia mt-3 " style='text-align: justify !important;'>
+
+                <div class="" style="float: right;width: 50%;">
+                    <img class="img-responsive img-fluid float-right" src="/" alt="" style="padding-left: 1em;">
+                    <div class='float-right bold credito_detail' style="position: relative; bottom:30px;padding-right: 10px;"> </div>
+                </div>
+                
+            </main>
+
+            <a class='mt-1' style="display: block;" onclick='view_materiaNoticiario("voltar")'> 
+                <i class="fas fa-arrow-left"> VOLTAR </i>
+            </a>
+
+        </div>
+    </div>
+    
+
+
+    <div class='row' >
+        <div class='col-md-8 mt-2 center' >
+            <a href='http://agenciaminas.mg.gov.br' target='_blank' >
+                <div>Leia mais...</div>
+                <img style="width:12em;"  
+                     class="img-responsive img-fluid" 
+                     src="/modulos/casacivil.jornalminasgerais/bibliotecas/imagens//logomarca_agencia_minas.png" 
+                     alt="Agencia Minas" />
+            </a>
+        </div>
+    </div> 
+
+</div>     
+    <!--ITENS DO CARROUSEL-->
+    <div class="carousel-inner">
+
+        
+                            
+
+    </div>
+    
+</div>
+
+
+
+<div class='container-fluid jornalMinasGerais'  >
+
+    <div class="row toolbar" >
+
+        <div class="col-md-6 float-left">
+            <nav class="navbar float-left">
+                <i class="nav-link fas fa-caret-left fa-2x view_anterior " title="Volta para a pagina anterior" page='' source=''></i>
+                <i class='nav-link fas fa-save downloadPage' title='Baixar esta pagina' page='' source=''></i> 
+                <i class='nav-link fas fa-download downloadCaderno' title='Baixar este caderno completo' page='' source=''></i>  
+                <i id='jornalTelaCheia' class="telaCheia nav-link fas fa-expand" title='Visualizar em tela cheia'> </i>
+
+                <i class="nav-link fas fa-caret-right fa-2x view_proximo" title="Avançar para a próxima página" page='' source=''> </i>
+
+                <!--Impressora removida PDF não imprime-->
+                <!--<i id='imprimirJornal' class="fas fa-print no-mobile" title="Imprimir jornal"></i>-->
+
+                <!--<i id='jornalVoltar' class="nav-link fas fa-undo" title="Voltar" page='' source='' style="display: none;">--> 
+                    <a id='jornalVoltar' class="link" style="display: none;" >Voltar</a> 
+                <!--</i>-->
+            </nav>
+        </div>
+
+        <div class="col-md-6 ">
+
+            <nav class="navbar navbar-right float-right gotoPage" style='margin-top: 5px; width: 50%;'>
+
+                <div class="input-group" >
+
+                    <!--<div style="font-weight: bold; width: 100%; margin-left: 2.5em;" > Ir para página:</div>-->
+                    <!--<div class="input-group-prepend no-mobile" >-->
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa fa-book fa-1x no-mobile"></i>&nbsp;Ir para 
+                        </span>
+                    <!--</div>-->
+                    <input type="text" id="goPage" class="form-control" placeholder="Página" value="">
+
+                    <div class="input-group-prepend">
+                        <span id="irParaPagina" class="input-group-text" >
+                            <a href="#">Ir</a>
+                        </span>
+                    </div>
+                </div>                
+
+            </nav>
+        </div>
+
+    </div>
+
+
+    <div class="row targetMedia" 
+         data-toggle="tooltip" 
+         title="Clique para alternar a visualização em tela cheia">
+
+        <div class="col-md-12">
+            <!--<embed id='jornalTelaCheia' src="" width="100%" height="100%" frameborder="1">-->        
+            <embed id='jornalTelaCheia' src="" width="100%" frameborder="1">        
+        </div>
+
+    </div>
+
+</div>
+        </div>
+    </div>
+</div>
+
+
+        </div> <!-- fim da DIV com class=inBoxApp -->
+
+
+<div class="container-fluid bg-silver rodape"> 
+    <div class="row">
+
+        <div class="col-md-4 center">
+            <!--<p>SECCRI - Secretaria de Estado de Casa Civil e de Relações Institucionais</p>-->
+            <!--<a target='_black' href='http://www.casacivil.mg.gov.br'> <img class='img-responsive img-fluid' src='modulos/casacivil.jornalminasgerais/bibliotecas/imagens//logo_seccri_branca.png' > </a>-->
+
+        </div>
+
+        <div class="col-md-4">
+            <p>Cidade Administrativa Presidente Tancredo Neves<br><br>
+                Rodovia Papa João Paulo II, 4001<br>
+                Edifício Gerais, 1º andar<br>
+                Bairro Serra Verde - BH / MG<br>
+                CEP: 31630-901</p> 
+        </div>
+ 
+        <div class="col-md-4">
+            <p><a target='_blank' href='http://www.casacivil.mg.gov.br/index.php/telefones-de-contato' >Telefones de contato</a></p>
+            <p><a href='#' >Aspectos legais e responsabilidades</a></p>
+            <p><a href='#' >Política de Privacidade</a></p>
+        </div>
+
+    </div>
+</div>
+
+<!--<div id='testeSuportePDF'>
+    <object class='testeSuportePDF' data="modulos/casacivil.jornalminasgerais/bibliotecas/imagens/lab.pdf" type="application/pdf">
+        <p id='testeSuportePDF'>Seu navegador não tem um plugin pra PDF</p>
+    </object>
+</div>-->
+
+<div class="copyright"> 
+    <div class="container-fluid copyright">
+        <div class="row">
+            <div class="col-md-12">
+                <!--<p>&copy; Todos os direitos reservados.</p>-->
+                Melhor visualizado nos navegadores
+                    <a target='_blank' href="https://www.mozilla.org/pt-BR/firefox/new/" title='Clique aqui para baixar o navegador'>Mozila Firefox</a>, 
+                    <a target='_blank' href="https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&gclid=EAIaIQobChMItvHZnYfy3gIVhAWRCh2zNgdsEAAYASAAEgJpG_D_BwE&gclsrc=aw.ds" title='Clique aqui para baixar o navegador'>Chrome</a> ou  
+                    <a target='_blank' href="https://www.microsoft.com/pt-br/windows/microsoft-edge" title='Clique aqui para baixar o navegador'>EDGE</a> 
+                    <!--<a target='_blank' href="https://www.microsoft.com/pt-br/download/confirmation.aspx?id=40901" title='Clique aqui para baixar o navegador'> Internet Explorer 11</a>.-->
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+        <script type="text/javascript" src="/modulos/casacivil.jornalminasgerais/bibliotecas/cache/javascript/vuuviuu4u144jksihcn1tje9l1.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jQuery/jquery.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jQuery/mask.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jQuery/maskMoney.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jQuery/jquery.hotkeys.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jQuery/jquery-ui.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/moment/moment.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/nucleo.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jquery.forms.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/forms.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/jQuery/jquery-confirm.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/imageviewer.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/abas.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/google.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/PDF/pdfobject.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/DataTable/media/js/datatables.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/DataTable/media/js/Buttons-1.5.2/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/DataTable/media/js/Buttons-1.5.2/js/buttons.colVis.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/DataTable/media/js/Buttons-1.5.2/js/jszip.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/DataTable/media/js/Buttons-1.5.2/js/pdfmake.min.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript/DataTable/media/js/Buttons-1.5.2/js/vfs_fonts.js"></script>
+        <script type="text/javascript" src="/modulos/casacivil.jornalminasgerais/biblioteca.js"></script>
+        <script type="text/javascript" src="/modulos/casacivil.jornalminasgerais/Home/Home.js"></script>
+        <script type="text/javascript" src="/nucleo/bibliotecas/javascript//pos_load.js"></script>
+    
+
+</body>
+
+</html>
+
