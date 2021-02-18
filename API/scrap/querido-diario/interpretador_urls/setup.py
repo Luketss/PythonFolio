@@ -20,9 +20,23 @@ def set_tesseract_path():
 
 def set_poppler_dir():
     """
-    Dene o caminho para dependencia
+    Define o caminho para dependencia
     Returns:
         str: origem do poppler
     """
     poppler_dir = 'C:\\Program Files\\poppler-0.68.0\\bin'
     return poppler_dir
+
+def path_to_database():
+    """
+    Define o caminho para busca dos paths dentro do banco de dados
+    """
+    db_connection = '../Scraper/data_collection/querido-diario.db'
+    return db_connection
+
+def path_to_data_collection():
+    """
+    Define o caminho para a pasta data (contém o resultado do querido diário)
+    """
+    path_to_data_collection = '../Scraper/data_collection/data/'
+    return path_to_data_collection
