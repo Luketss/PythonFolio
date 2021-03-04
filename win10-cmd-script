@@ -1,0 +1,5 @@
+netsh wlan show profiles #exibe todos os profiles conectados dentro daquele computador
+
+netsh wlan show profile NOME_DA_REDE #nesse caso, o conteúdo da chave vem com o conteúdo "presente"
+
+netsh wlan show profile NOME_DA_REDE #irá alterar o conteúdo "presente" para a chave da rede
