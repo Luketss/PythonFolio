@@ -5,13 +5,26 @@ tim = Turtle()
 screen = Screen()
 
 def move_forwards():
+    tim.setheading(90)
+    tim.forward(10)
+
+def move_backwards():
+    tim.setheading(270)
+    tim.forward(10)
+
+def move_left():
+    tim.setheading(180)
+    tim.forward(10)
+
+def move_right():
+    tim.setheading(0)
     tim.forward(10)
 
 while True:
-    screen.onkey(key='space', fun=move_forwards)
-    screen.onkey(lambda: tim.setheading(90), 'Up')
-    screen.onkey(lambda: tim.setheading(180), 'Left')
-    screen.onkey(lambda: tim.setheading(0), 'Right')
-    screen.onkey(lambda: tim.setheading(270), 'Down')
     screen.listen()
+    screen.onkey(lambda: move_forwards(), 'Up')
+    screen.onkey(lambda: move_backwards(), 'Down')
+    screen.onkey(lambda: move_left(), 'Left')
+    screen.onkey(lambda: move_right(), 'Right')
+
     screen.exitonclick()
