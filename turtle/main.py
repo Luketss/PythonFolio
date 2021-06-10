@@ -20,11 +20,10 @@ def move_right():
     tim.setheading(0)
     tim.forward(10)
 
-while True:
-    screen.listen()
-    screen.onkey(lambda: move_forwards(), 'Up')
-    screen.onkey(lambda: move_backwards(), 'Down')
-    screen.onkey(lambda: move_left(), 'Left')
-    screen.onkey(lambda: move_right(), 'Right')
+screen.listen()
+screen.onkey(lambda: move_forwards(), 'Up')
+screen.onkey(lambda: move_backwards(), 'Down')
+screen.onkey(lambda: move_left(), 'Left')
+screen.onkey(lambda: move_right(), 'Right')
 
-    screen.exitonclick()
+screen.exitonclick()
