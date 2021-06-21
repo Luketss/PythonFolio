@@ -34,7 +34,6 @@ def main():
         else:
             print('não tem')
             tries -=1
-        print(word, tries)
         print(display_hangman(tries))
 
     if not guessed:
