@@ -6,20 +6,25 @@ import pandas
 #         'cinnamon' : 0,
 #         'black': 0,
 #     }
+class Squirrel:
+    def __init__(self, dataframe):
+        self.dataframe = dataframe
 
-def set_all_colors(dataframe):
-    squirrel_color = set()
 
-    for value in dataframe['Primary Fur Color']:
-        squirrel_color.add(value)
+    def set_all_colors(self):
+        squirrel_color = set()
 
-    return squirrel_color
+        for value in self.dataframe['Primary Fur Color']:
+            squirrel_color.add(value)
+
+        return squirrel_color
     
 
 def main():
     df = pandas.read_csv('2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
+    sq = Squirrel(df)
 
-    squirrel = dict.fromkeys(set_all_colors(df), 0)
+    squirrel = dict.fromkeys(sq.set_all_colors(), 0)
 
     for value in df['Primary Fur Color']:
         if value == 'Gray':
