@@ -25,7 +25,7 @@ class Candle:
 
 class Indicador:
 
-    def __init__(self, numero_periodos, desvio_padrao=0)
+    def __init__(self, numero_periodos, desvio_padrao=0):
         self.numero_periodos = numero_periodos
         self.desvio_padrao = desvio_padrao
     
