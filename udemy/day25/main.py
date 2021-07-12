@@ -29,7 +29,7 @@ def main():
     for value in df['Primary Fur Color']:
         if value == 'Gray':
             squirrel['Gray'] += 1
-
+  
         elif value == 'Cinnamon':
             squirrel['Cinnamon'] += 1
 

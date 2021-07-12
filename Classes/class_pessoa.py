@@ -34,9 +34,12 @@ class Pessoa():
         return self.__nome
 
 if __name__ == "__main__":
-    lucas = Pessoa("Lucas", 22, 80, 1.78)
+    objeto = Pessoa("Lucas", 22, 80, 1.78)
 
-    print(lucas.get_nome())
+    # print(Pessoa("a", 22, 80, 1.78))
+    # print(objeto)
+    # print(objeto.get_nome())
 
-    print(lucas.envelhecer())
-    print(lucas.engordar(10))
+    peso = objeto.engordar(0)
+    print(peso)
+    print(objeto.engordar(10))

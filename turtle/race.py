@@ -38,5 +38,4 @@ while is_race:
 print('winner ' + winner)
         
 
-
 screen.exitonclick()
