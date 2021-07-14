@@ -40,6 +40,36 @@ class db_Conn:
             return False
         except mariadb.Error as e:
             print(f'Error at: {e}')
+    
+    def get_stock_id(self, stock_code):
+        try:
+            query = f"SELECT * FROM stock WHERE stock_code='{stock_code}'"
+            self.cursor.execute(query)
+            stock_id = self.cursor.fetchone()
+            return stock_id
+        except mariadb.Error as e:
+            print(f'Error at: {e}')
+
+    def insert_stock_price(self, value_date, open_price, close_price, max_price, low_price, stock_code):
+        try:
+            stock_id, _ = self.get_stock_id(stock_code)
+            query = ("INSERT INTO StockPricesDay (value_date, open_price, close_price, max_price, low_price, StockId)"
+                    f"VALUES ('{value_date}', '{open_price}', '{close_price}', '{max_price}', '{low_price}', '{stock_id}')"
+            )
+            self.cursor.execute(query)
+            
+        except mariadb.Error as e:
+            print(f'Error at: {e}')
+
+    def get_stock_price(self):
+        try:
+            query = f"SELECT * FROM StockPricesDay WHERE StockId=3"
+            self.cursor.execute(query)
+            prices = self.cursor.fetchall()
+            return prices
+            
+        except mariadb.Error as e:
+            print(f'Error at: {e}')
 
     def commit_and_close(self):
         self.conn.commit()
@@ -47,5 +77,5 @@ class db_Conn:
 
 if __name__ == '__main__':
     conection = db_Conn()
-    conection.insert_stock('TSLA')
+    prices = conection.get_stock_price()
     conection.commit_and_close()
