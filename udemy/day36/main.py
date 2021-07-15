@@ -1,3 +1,4 @@
+import json
 import requests
 import pandas as pd
 
@@ -32,6 +33,7 @@ class Stock:
         except ValueError as e:
             print(f'Error {e}')
 
+
     def plot(self, stock_id) -> None:
         date = []
         open_price = []
@@ -58,7 +60,12 @@ class Stock:
                 ])
 
         fig.show()
+        #self.write_diff_day(day_variation)
 
+    def write_diff_day(self, day_variation):
+        dict_price = {date:difference for (date, difference) in day_variation}
+        with open('result.json', 'a') as f:
+            f.write(json.dumps(dict_price))
 
     def check_day_variation(self, date, open_price, close_price) -> tuple:
         return (date, (close_price / open_price - 1) / 100)
@@ -70,26 +77,4 @@ if __name__ == '__main__':
     tesla = Stock(STOCK, conn)
     #tesla.get_intraday_results()
     tesla.plot(stock_id)
-    
-    
-## STEP 1: Use https://www.alphavantage.co
-# When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
-
-## STEP 2: Use https://newsapi.org
-# Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
-
-## STEP 3: Use https://www.twilio.com
-# Send a seperate message with the percentage change and each article's title and description to your phone number. 
-
-
-#Optional: Format the SMS message like this: 
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of the coronavirus market crash.
-"""
 
