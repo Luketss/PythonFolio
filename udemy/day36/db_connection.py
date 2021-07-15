@@ -61,9 +61,9 @@ class db_Conn:
         except mariadb.Error as e:
             print(f'Error at: {e}')
 
-    def get_stock_price(self):
+    def get_stock_price(self, stock_id):
         try:
-            query = f"SELECT * FROM StockPricesDay WHERE StockId=3"
+            query = f"SELECT * FROM StockPricesDay WHERE StockId={stock_id}"
             self.cursor.execute(query)
             prices = self.cursor.fetchall()
             return prices
