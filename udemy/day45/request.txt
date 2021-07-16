@@ -1,0 +1,103 @@
+0 Um Sonho de Liberdade 
+1 Os Bons Companheiros 
+2 Forrest Gump: O Contador de Histórias 
+3 Os Caçadores da Arca Perdida 
+4 Indiana Jones e a Última Cruzada 
+5 O Resgate do Soldado Ryan 
+6 De Volta para o Futuro 
+7 De Volta para o Futuro II 
+8 O Senhor dos Anéis: A Sociedade do Anel 
+9 O Senhor dos Anéis: As Duas Torres 
+10 O Senhor dos Anéis: O Retorno do Rei 
+11 Cassino 
+12 O Poderoso Chefão 
+13 Matrix 
+14 Pulp Fiction: Tempo de Violência 
+15 O Sexto Sentido 
+16 Rain Man 
+17 Equilibrium 
+18 O Silêncio dos Inocentes 
+19 O Discurso do Rei 
+20 Clube da Luta 
+21 Gladiador 
+22 Uma Mente Brilhante 
+23 Cidade de Deus 
+24 Entrevista com o Vampiro 
+25 Duro de Matar 
+26 À Espera de um Milagre 
+27 O Último Samurai 
+28 Náufrago 
+29 A Lista de Schindler 
+30 O Profissional 
+31 K-Pax: O Caminho da Luz 
+32 Jurassic Park: O Parque dos Dinossauros 
+33 O Código Da Vinci 
+34 Sobre Meninos e Lobos 
+35 Gênio Indomável 
+36 Um Dia de Fúria 
+37 Apollo 13: Do Desastre ao Triunfo 
+38 Feitiço do Tempo 
+39 Coração Valente 
+40 Os Caça-Fantasmas 
+41 Alien - O 8º Passageiro 
+42 O Exterminador do Futuro 
+43 O Pianista 
+44 Jogo de Espiões 
+45 O Barco: Inferno no Mar 
+46 Círculo de Fogo 
+47 Pearl Harbor 
+48 Os Pássaros 
+49 Era uma Vez na América 
+50 Rambo - Programado Para Matar 
+51 Rocky: Um Lutador 
+52 A Outra História Americana 
+53 O Nome da Rosa 
+54 Dirty Dancing: Ritmo Quente 
+55 Prenda-me se for Capaz 
+56 Os Outros 
+57 Sociedade dos Poetas Mortos 
+58 Missão: Impossível 
+59 Medo e Delírio 
+60 Encontro Marcado 
+61 O Bebê de Rosemary 
+62 O Mensageiro 
+63 Mentes Perigosas 
+64 A Bruxa de Blair 
+65 Um Mundo Perfeito 
+66 Velocidade Máxima 
+67 Sete Anos no Tibet 
+68 E.T.: O Extraterrestre 
+69 Contatos Imediatos do Terceiro Grau 
+70 O Último Portal 
+71 Império do Sol 
+72 Na Natureza Selvagem 
+73 O Leitor 
+74 Efeito Borboleta 
+75 O Diário de Bridget Jones 
+76 A Múmia 
+77 Filadélfia 
+78 Stardust: O Mistério da Estrela 
+79 Cidade dos Anjos 
+80 Armageddon 
+81 Número 23 
+82 Efeito Dominó 
+83 Onze Homens e um Segredo 
+84 Doze Homens e Outro Segredo 
+85 O Fugitivo 
+86 Vanilla Sky 
+87 Dança com Lobos 
+88 De Olhos Bem Fechados 
+89 As Aventuras de Pi 
+90 Camisa de Força 
+91 Santos Justiceiros 
+92 Anjos da Noite 
+93 Extermínio 
+94 A Sombra e a Escuridão 
+95 Premonição 
+96 Tango e Cash: Os Vingadores 
+97 A Praia 
+98 Velozes & Furiosos 
+99 A Batalha de Riddick 
+100 list image 
+101 list image 
+102 list image 

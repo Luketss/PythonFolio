@@ -4,6 +4,7 @@ import pandas as pd
 
 import plotly.graph_objects as go
 
+from plotly.subplots import make_subplots
 from datetime import datetime
 from alpha_api import API
 from db_connection import db_Conn
@@ -58,7 +59,7 @@ class Stock:
                 low=low_price,
                 close=close_price)
                 ])
-
+        #fig.add_trace(go.Scatter(y=day_variation[1]))
         fig.show()
         #self.write_diff_day(day_variation)
 
