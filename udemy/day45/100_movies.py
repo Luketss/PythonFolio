@@ -9,7 +9,7 @@ def main():
 
     with open('request.txt', 'w') as file:
         for (index, value) in enumerate(film_titles):
-            file.write(f"{index} {value['alt']} \n")
+            file.write(f"{index}) {value['alt']} \n")
 
 if __name__ == '__main__':
     main()
