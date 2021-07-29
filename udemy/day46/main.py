@@ -34,19 +34,18 @@ class Top_musics:
         self._html = html
 
     def get_top_musics_from_html(self) -> str:
-        uri = []
         try:
+            uri = []
             soup = BeautifulSoup(self._html, features='html.parser')
-
             music_title = soup.find_all(name="span", class_="chart-element__information__song", text=True)
+            song_name = [song.getText() for song in music_title]
 
-            with open('top100.txt', 'w', encoding='utf-8') as f:
-                for (index, name) in enumerate(music_title):
-                    print(f'Buscando uri da {name}')
-                    uri.append(self.search_for_music(re.sub('</*span.*?>', '', str(name))))
-                    
-            for (index, value) in enumerate(uri):
-                print(index, value)
+            for song in song_name:
+                search = self.search_for_music(song)
+
+                if search is not None:
+                    uri.append(search)
+            print(uri)
         except ValueError as e:
             print(f'Error on get_top_musics_from_html: {e}')
 
@@ -68,8 +67,10 @@ class Top_musics:
         return uri
 
     def get_response_uri(self, json_response):
-        return json_response['tracks']['items'][0]['uri']
-
+        try:
+            return json_response['tracks']['items'][0]['uri']
+        except:
+            return None
 
 if __name__ == '__main__':
     bilboard_obj = Bilboards('https://www.billboard.com/charts/hot-100')
