@@ -24,16 +24,27 @@ class Net:
             EC.element_to_be_clickable((By.XPATH, "//span[@class='start-text']"))
         ).click()
 
+
     def find_internet_speed(self):
-        WebDriverWait(self.browser, 20).until(
-            EC.element_to_be_clickable(
+        speed = WebDriverWait(self.browser, 20).until(
+            EC.presence_of_element_located(
                 (By.XPATH, "//span[@class='result-data-large number result-data-value download-speed']")
             )
-        ).click()
-        
+        )
+        return speed.text
+
+
+    def find_upload_speed(self):
+        upload = WebDriverWait(self.browser, 20).until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//span[@class='result-data-large number result-data-value upload-speed']")
+            )
+        )
+        return upload.text
 
 if __name__ == '__main__':
     
     internet = Net()
     internet.start_internet_test()
-
+    time.sleep(60)
+    speed, upload = internet.find_internet_speed(), internet.find_upload_speed()
