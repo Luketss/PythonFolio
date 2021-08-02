@@ -20,7 +20,17 @@ class Net:
         return browser
     
     def start_internet_test(self):
-        WebDriverWait(self.browser, 20).until(EC.element_to_be_clickable((By.XPATH, "//span[@class='start-text']"))).click()
+        WebDriverWait(self.browser, 20).until(
+            EC.element_to_be_clickable((By.XPATH, "//span[@class='start-text']"))
+        ).click()
+
+    def find_internet_speed(self):
+        WebDriverWait(self.browser, 20).until(
+            EC.element_to_be_clickable(
+                (By.XPATH, "//span[@class='result-data-large number result-data-value download-speed']")
+            )
+        ).click()
+        
 
 if __name__ == '__main__':
     
