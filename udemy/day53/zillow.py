@@ -28,7 +28,9 @@ class Zillow:
 
             time.sleep(2)
             rental_props = self.browser.find_elements_by_xpath('//ul[@class="photo-cards"]')
-            return rental_props
+            for value in rental_props:
+                print(value.text)
+
         except ValueError as e:
             print(f'get rental list error {e}')
 
@@ -39,4 +41,4 @@ class Zillow:
 if __name__ == '__main__':
     zillow_obj = Zillow()
     zillow_obj.go_to_search_page()
-    print(zillow_obj.get_zillow_rental_list())
+    zillow_obj.get_zillow_rental_list()
