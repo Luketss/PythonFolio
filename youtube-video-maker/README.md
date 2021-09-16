@@ -86,19 +86,3 @@ The program behaves as follows:
  * 6. Rename and convert the images to JPG;
  * 7. Make the video, add the sentences as subtitles and add a music;
  * 8. Send the final video to YouTube with title, description and tags.
-
-NOTE: All the files (images, videos and subtitles) are saved in the user's folder, in a directory with the search term name.
-
-Example: [final_video.mp4](examples/final_video.mp4)
-
-# Bugs to fix:
- * Get better images;
- * Correct the error that causes the fifth subtitle to be skipped.
-
-### Other information
-
-Project inspired by [video-maker](https://github.com/filipedeschamps/video-maker), by [filipedeschamps](https://github.com/filipedeschamps)
-
-Music extracted from: [https://www.youtube.com/watch?v=LeV4u5Y-3ac](https://www.youtube.com/watch?v=LeV4u5Y-3ac)
-
-Original video upload code: [https://developers.google.com/youtube/v3/guides/uploading_a_video?hl=en](https://developers.google.com/youtube/v3/guides/uploading_a_video?hl=en)
