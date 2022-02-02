@@ -1,0 +1,169 @@
+
+<html>
+
+<link href="/css/geral_impressao_tabelas.css" rel="stylesheet" type="text/css">
+<!-- <link href="/css/geral.css" rel="stylesheet" type="text/css"> !-->
+
+<script language="JavaScript" src="/javascript/impressao_tabelas.js"></script>
+
+<table width="100%" border="0" align="center" cellpadding="3" cellspacing="3" class="texto-geral">
+  <tr> 
+    <td width="40%" valign="bottom" > 
+      <div id="titulo"><span class="Subtitulos">Resultado da Consulta de
+	  Precatório	  
+	  </span><span class="texto_geral"><br>
+        </span></div></td>
+<td width="16%" >&nbsp;</td>
+<td width="14%"  align="right" >
+</td>
+</tr>
+</table>
+<table width="100%" border="0" class="texto-geral">
+<tr>
+    <td width="30%"> <div align="right"><a href="javascript:AbreImpressao();"><img src="imagens/versao_impressao.gif" alt="Vers&atilde;o para impress&atilde;o"border="0"></a><a href="index.php"></a> 
+      </div></td>
+</tr>
+</table>
+
+<div id="conteudo"> 
+  <table width="100%" border="0"  class="texto-geral">
+    <tr bgcolor="#F7F7F7"> 
+      <td><strong>Tipo de Expediente:</strong></td>
+      <td>
+        Precat&oacute;rio 
+      </td>
+    </tr>
+    <tr> 
+      <td><strong>N&uacute;mero do Expediente</strong></td>
+      <td> 
+        195646      </td>
+    </tr>
+    <tr bgcolor="#F7F7F7"> 
+      <td><strong>Data de Apresenta&ccedil;&atilde;o:</strong></td>
+      <td> 
+        05/02/2020      </td>
+    </tr>
+    <tr> 
+      <td><strong> Processo Administrativo:</strong></td>
+      <td width="50%"> 
+        001956/0300/46-5      </td>
+    </tr>
+        <tr> 
+      <td valign="top"><strong>Valor do Precat&oacute;rio:</strong></td>
+      <td width="50%" valign="top"> 
+          
+        R$ 203.209,40 <b>* ver nota abaixo</b>
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top"><strong>Origem:</strong></td>
+      <td width="50%" valign="top">
+        Porto Alegre  (5&ordf; Vara da Fazenda P&uacute;blica do Foro Central) 
+      </td>
+    </tr>
+    <tr bgcolor="#F7F7F7"> 
+      <td><strong>Pagador:</strong></td>
+      <td width="50%">
+        Estado do Rio Grande do Sul 
+      </td>
+    </tr>
+        <tr bgcolor="#F7F7F7"> 
+      <td valign="top"><strong> Advogado(s):</strong></td>
+      <td width="50%"> 
+        Jose Vecchio Filho <br>Naiana Pacheco Bleicker<br>      </td>
+    </tr>
+    <tr> 
+      <td valign="top"><strong>Objeto:</strong></td>
+      <td width="50%">
+        Alimentar - LIQUIDA&Ccedil;&Atilde;O / CUMPRIMENTO / EXECU&Ccedil;&Atilde;O :: COMPET&Ecirc;NCI 
+      </td>
+    </tr>
+    <tr bgcolor="#F7F7F7"> 
+      <td valign="top"><strong>Or&ccedil;amento Correspondente:</strong></td>
+      <td width="50%">
+        ano de 2021 
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top"><strong>Situa&ccedil;&atilde;o Atual:</strong></td>
+      <td width="50%">
+        Aguardando pagamento 
+      </td>
+    </tr>
+    <tr bgcolor="#F7F7F7">
+      <td valign="top"><strong>Localiza&ccedil;&atilde;o:</strong></td>
+      	<td width="50%">
+        Apresentado via eproc 
+		</td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>Tribunal de Origem:</strong></td>
+      <td>
+      TJRS  
+      </td>
+    </tr>
+    <tr> 
+      <td valign="top"><strong>Posi&ccedil;&atilde;o na Fila Ordem Cronológica:</strong></td>
+      <td> 
+        301                <strong>***Ver nota abaixo</strong>
+                </td>
+    </tr>	
+</table>
+
+  <p class="Subtitulos texto-geral"><strong>Parcelas preferenciais deferidas neste expediente e ainda não pagas:</strong></p>
+	<table class="texto-geral" width="100%" border="0"  >
+    	<tr bgcolor="#F7F7F7">
+        	            <td><strong>Posi&ccedil;&atilde;o na fila</strong></td>
+            <td><strong>Tipo Parcela</strong></td>
+            <td><strong>Natureza do Cr&eacute;dito</strong></td>
+            <td><strong>N&deg; Parcela</strong></td>
+        </tr>
+    	<tr >
+        	            <td>301</td>
+            <td>Doen&ccedil;a Grave</td>
+            <td>Alimentar</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <table width="100%" border="0" class="texto-geral" >    
+       <tr> 
+        <td colspan="3" valign="top" style="padding-left:60px;padding-top:30px;">
+            <b>*Atendendo determina&ccedil;&atilde;o contida na Resolu&ccedil;&atilde;o n&deg; 303/2019 do CNJ, que visa resguardar a identidade do credor, procedemos a retirada do seu nome. Informamos, ainda, que passamos a disponibilizar, com as demais informa&ccedil;&otilde;es, o valor integral do precat&oacute;rio. Valores individualizados dever&atilde;o ser obtidos junto ao Setor.</b>
+        </td>
+    </tr> 
+       <br>
+    <br>
+    <tr> 
+   	  <td colspan="3" valign="top" style="padding-left:60px;padding-top:30px;">
+        <b>***O precat&oacute;rio pode ter sua posi&ccedil;&atilde;o modificada na ordem cronol&oacute;gica de pagamento em virtude do cadastramento das parcelas preferenciais (doen&ccedil;a, idade ou defici&ecirc;ncia f&iacute;sica) que obrigatoriamente assumem a frente da lista. No entanto, ap&oacute;s o pagamento da parcela preferencial do precat&oacute;rio, este retorna ao lugar de origem - ordem cronol&oacute;gica de inscri&ccedil;&atilde;o - aguardando que seja pago o saldo. </b>
+		</td>
+    </tr>    
+        <tr> 
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+  </table>
+<table width="80%" border="0" align="center" cellspacing="1" cellpadding="1"  class="texto-geral">
+<tr><td>
+<p>Esta informação refere-se a situação deste precatório na data e hora desta consulta.</p>
+        </td>
+</tr>
+</table>
+  <table width="80%" border="0" align="center" cellspacing="1" cellpadding="1"  class="texto-geral">
+    <tr> 
+      <td width="50%" class="texto_geral"><strong>Data da consulta:</strong> 23/09/2021</td>
+      <td width="50%" class="texto_geral"><strong>Hora da consulta:</strong> 10:00:16</td>
+    </tr>
+  </table>
+        <p style="padding-left:60px;" class="texto-geral">
+            <b>Endere&ccedil;o</b><br/>
+            Pra&ccedil;a Marechal Deodoro, n&deg;55 / Sala 305 - Centro<br/>
+            Fone: (51)3210-7291 | 3210-7293 / FAX (51) 3210-7294<br/>
+            CEP 90010-906 - Porto Alegre/RS - Brasil<br/>
+            <br/>
+            <b>Hor&aacute;rio de Atendimento</b><br/>
+            Atendimento Presencial: 9h &agrave;s 18h<br/>
+            Atendimento ao telefone: 14h &agrave;s 18h<br/>
+    </p> 
+</div>
+</html>           
