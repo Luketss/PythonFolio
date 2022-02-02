@@ -10,8 +10,6 @@ from tika import parser
 from os import listdir
 from os.path import isfile, join
 
-a = '5021497-35.2019.4.04.9388'
-
 proc = f'{a}'.replace('-', '.')
 proc_li = f'{proc}'.replace('.', '')
 
